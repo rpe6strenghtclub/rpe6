@@ -8,9 +8,9 @@
     <title>RPE6 Strength Academy | Aperfeiçoamento em powerlifting</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500..900&family=Oswald:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <script>document.documentElement.classList.add('reveal-ready');</script>
+    <script src="script.js" defer></script>
   </head>
   <body>
     <div class="parallax-background" aria-hidden="true"></div>
@@ -18,7 +18,7 @@
 
     <header class="site-header">
       <a class="brand" href="#inicio" aria-label="RPE6 Strength Academy, início">
-        <img class="brand-logo" src="assets/brand/rpe6-strength-academy-logo.jpg" width="741" height="741" alt="RPE6 Strength Academy">
+        <img class="brand-logo" src="assets/brand/rpe6-strength-academy-logo.jpg" width="741" height="741" decoding="async" alt="RPE6 Strength Academy">
       </a>
       <span class="header-status"><span class="product-name">RPE6 Strength <em>Academy</em></span></span>
     </header>
@@ -27,7 +27,7 @@
       <section class="hero section-frame" id="inicio" aria-labelledby="hero-title">
         <div class="hero-photo">
           <div class="hero-photo-layers">
-        <img class="hero-photo-athlete" src="assets/images/rpe6-hero-athlete-feature.png" width="1400" height="840" fetchpriority="high" decoding="async" alt="">
+            <img class="hero-photo-athlete" src="assets/images/rpe6-hero-athlete-feature.png" width="1400" height="840" fetchpriority="high" decoding="async" alt="">
           </div>
         </div>
         <div class="hero-copy-shadow" aria-hidden="true"></div>
@@ -127,16 +127,16 @@
                 <img src="assets/images/rpe6-method-deadlift2.jpg" width="1365" height="1517" loading="lazy" decoding="async" fetchpriority="low" alt="Atleta executando levantamento terra em competição de powerlifting">
               </div>
               <div class="method-carousel-slide">
-                <img src="assets/images/rpe6-competition-squat-01.png" width="1365" height="1517" loading="lazy" decoding="async" fetchpriority="low" alt="Atleta se preparando para executar o agachamento em competição de powerlifting">
+                <img src="assets/images/rpe6-competition-squat-01.jpg" width="1365" height="1517" loading="lazy" decoding="async" fetchpriority="low" alt="Atleta se preparando para executar o agachamento em competição de powerlifting">
               </div>
               <div class="method-carousel-slide">
-                <img src="assets/images/rpe6-competition-prep-02.png" width="1365" height="1517" loading="lazy" decoding="async" fetchpriority="low" alt="Atleta ajustando o cinto antes de uma tentativa em competição de powerlifting">
+                <img src="assets/images/rpe6-competition-prep-02.jpg" width="1365" height="1517" loading="lazy" decoding="async" fetchpriority="low" alt="Atleta ajustando o cinto antes de uma tentativa em competição de powerlifting">
               </div>
               <div class="method-carousel-slide">
-                <img src="assets/images/rpe6-competition-squat-03.png" width="1365" height="1517" loading="lazy" decoding="async" fetchpriority="low" alt="Atleta posicionado para o agachamento em competição de powerlifting">
+                <img src="assets/images/rpe6-competition-squat-03.jpg" width="1365" height="1517" loading="lazy" decoding="async" fetchpriority="low" alt="Atleta posicionado para o agachamento em competição de powerlifting">
               </div>
               <div class="method-carousel-slide">
-                <img src="assets/images/rpe6-competition-squat-04.png" width="1365" height="1517" loading="lazy" decoding="async" fetchpriority="low" alt="Atleta iniciando uma tentativa de agachamento em competição de powerlifting">
+                <img src="assets/images/rpe6-competition-squat-04.jpg" width="1365" height="1517" loading="lazy" decoding="async" fetchpriority="low" alt="Atleta iniciando uma tentativa de agachamento em competição de powerlifting">
               </div>
             </div>
           </div>
@@ -211,13 +211,13 @@
               <img src="assets/images/rpe6-community-group.jpg" width="3200" height="1414" alt="Atletas de powerlifting reunidos com medalhas e troféus" loading="lazy" decoding="async" fetchpriority="low">
             </div>
             <div class="final-community-slide">
-              <img src="assets/images/rpe6-team-01.png" width="3200" height="1414" alt="Equipe RPE6 reunida após competição de powerlifting" loading="lazy" decoding="async" fetchpriority="low">
+              <img src="assets/images/rpe6-team-01.jpg" width="3200" height="1414" alt="Equipe RPE6 reunida após competição de powerlifting" loading="lazy" decoding="async" fetchpriority="low">
             </div>
             <div class="final-community-slide">
-              <img src="assets/images/rpe6-team-02.png" width="3200" height="1414" alt="Atletas e equipe RPE6 reunidos com troféus" loading="lazy" decoding="async" fetchpriority="low">
+              <img src="assets/images/rpe6-team-02.jpg" width="3200" height="1414" alt="Atletas e equipe RPE6 reunidos com troféus" loading="lazy" decoding="async" fetchpriority="low">
             </div>
             <div class="final-community-slide">
-              <img src="assets/images/rpe6-team-03.png" width="3200" height="1414" alt="Equipe RPE6 reunida em evento de powerlifting" loading="lazy" decoding="async" fetchpriority="low">
+              <img src="assets/images/rpe6-team-03.jpg" width="3200" height="1414" alt="Equipe RPE6 reunida em evento de powerlifting" loading="lazy" decoding="async" fetchpriority="low">
             </div>
           </div>
         </div>
@@ -230,79 +230,12 @@
     </main>
 
     <a class="whatsapp-button" href="https://wa.me/message/DQ3XQCHDIIOME1" target="_blank" rel="noopener noreferrer" aria-label="Tirar dúvidas pelo WhatsApp">
-      <img src="assets/images/whatsapp-icon.png" width="900" height="900" alt="">
+      <img src="assets/images/whatsapp-icon.png" width="900" height="900" loading="lazy" decoding="async" fetchpriority="low" alt="">
     </a>
 
     <footer class="site-footer">
       <p><span class="product-name">RPE6 Strength <em>Academy</em></span> <span>•</span> Treinamento de força com propósito. <span>•</span> © 2026 RPE6. Todos os direitos reservados.</p>
       <p class="footer-transparency">CREF 189456-G/SP <span>•</span> Contato: <a href="tel:+5512981521537">(12) 98152-1537</a> <span>•</span> <a href="https://linktr.ee/gabduques" target="_blank" rel="noopener noreferrer">linkTree</a></p>
     </footer>
-    <script>
-      (() => {
-        const background = document.querySelector('.parallax-background');
-        const desktop = window.matchMedia('(min-width: 761px)');
-        const tallViewport = window.matchMedia('(max-aspect-ratio: 1/1)');
-        let frame = 0;
-
-        const update = () => {
-          frame = 0;
-          if (!desktop.matches) {
-            background.style.transform = '';
-            return;
-          }
-
-          const scrollRange = document.documentElement.scrollHeight - window.innerHeight;
-          const imageRatio = tallViewport.matches ? 4096 / 1844 : 1;
-          const imageHeight = window.innerWidth * imageRatio;
-          const availableTravel = Math.max(0, imageHeight - window.innerHeight);
-          const progress = scrollRange > 0 ? window.scrollY / scrollRange : 0;
-          background.style.transform = `translate3d(0, ${-availableTravel * progress}px, 0)`;
-        };
-
-        const requestUpdate = () => {
-          if (!frame) frame = window.requestAnimationFrame(update);
-        };
-
-        window.addEventListener('scroll', requestUpdate, { passive: true });
-        window.addEventListener('resize', requestUpdate);
-        desktop.addEventListener('change', requestUpdate);
-        tallViewport.addEventListener('change', requestUpdate);
-        requestUpdate();
-
-        const revealElements = document.querySelectorAll('.reveal');
-        const reveal = (element) => element.classList.add('is-revealed');
-        const revealWhenReady = (element) => {
-          if (!element.classList.contains('reveal-media')) {
-            reveal(element);
-            return;
-          }
-
-          const image = element.querySelector('img');
-          if (!image || image.complete) {
-            reveal(element);
-            return;
-          }
-
-          image.addEventListener('load', () => reveal(element), { once: true });
-          image.addEventListener('error', () => reveal(element), { once: true });
-        };
-
-        const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-        if (reducedMotion.matches || !('IntersectionObserver' in window)) {
-          revealElements.forEach(reveal);
-          return;
-        }
-
-        const revealObserver = new IntersectionObserver((entries) => {
-          entries.forEach((entry) => {
-            if (!entry.isIntersecting) return;
-            revealObserver.unobserve(entry.target);
-            revealWhenReady(entry.target);
-          });
-        }, { rootMargin: '0px 0px -10%', threshold: 0.1 });
-
-        revealElements.forEach((element) => revealObserver.observe(element));
-      })();
-    </script>
   </body>
 </html>

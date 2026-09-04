@@ -1,27 +1,37 @@
 # RPE6 Strength Academy
 
-Landing page estática e responsiva sobre treinamento de força, periodização e powerlifting.
+Landing page estática e responsiva para a RPE6 Strength Academy, voltada a treinamento de força, periodização e powerlifting.
 
 ## Estado atual
 
-- Uma página pública em `index.html`, com estilos em `styles.css`.
-- Sem JavaScript, framework, backend, build ou dependências de runtime.
-- Identidade em preto, vermelho e branco, apresentada como RPE6 Strength Academy, com logo próprio no cabeçalho.
-- Hero responsivo com uma única fotografia quadrada, reposicionada pelo layout em cada breakpoint.
-- Background global fixo em todos os breakpoints, com arte específica até 760 px.
-- A Academy é um produto educacional independente e não dá acesso ao RPE6 Strength Club.
-- Duas CTAs “Conheça a Academy” desabilitadas até a aprovação dos destinos comerciais.
-- Sem preço, depoimentos, promessas de resultado ou links comerciais ativos.
+- Uma rota pública em `index.html`, com estilos em `styles.css` e comportamento em `script.js`.
+- Sem framework, backend, etapa de build ou dependências de runtime.
+- Ordem publicada: Hero, Academy, Módulos, Método, oferta de lançamento, FAQ e CTA final.
+- Preço de lançamento de **R$ 39,90 por mês**, preservado enquanto a assinatura permanecer ativa.
+- Duas CTAs “Conheça a Academy” ativas para o checkout Kiwify.
+- Contato flutuante pelo WhatsApp e, no rodapé, telefone, CREF e Linktree.
+- Carrosséis automáticos na Academy, no Método e no CTA final; FAQ nativo; brilho e zoom nos CTAs.
+- Parallax desktop controlado por `requestAnimationFrame`; no mobile o background permanece estático.
+- Entrada progressiva única por blocos com `IntersectionObserver`, fallback visível sem JavaScript e respeito a `prefers-reduced-motion`.
+- Hero e logo do cabeçalho carregados imediatamente; as 13 imagens secundárias usam carregamento tardio, dimensões intrínsecas e decodificação assíncrona.
+- Fontes externas: Barlow Condensed variável de 500 a 900 e Oswald 500, ambas com `display=swap`.
 
-## Orçamento técnico atual
+## Destinos ativos
 
-- HTML: 9.291 bytes.
-- CSS: 10.813 bytes.
-- HTML + CSS: 20.104 bytes.
-- DOM inicial: 153 elementos descendentes de `html` (154 contando o elemento raiz).
-- Imagens públicas: oito arquivos e 7.159.197 bytes; a nova foto do hero e o logo da Academy foram mantidos no JPEG e nas dimensões recebidas.
-- Fontes externas: Barlow Condensed 500, 600, 700, 800 e 900, mais Oswald 500, com `display=swap`.
-- JavaScript: 0 bytes.
+- Checkout: `https://pay.kiwify.com.br/Lxz6VDm`
+- WhatsApp: `https://wa.me/message/DQ3XQCHDIIOME1`
+- Telefone: `tel:+5512981521537`
+- Linktree: `https://linktr.ee/gabduques`
+
+## Métricas da refatoração de 2026-09-04
+
+- HTML: **16.344 bytes**.
+- CSS: **20.874 bytes**.
+- JavaScript: **2.729 bytes**.
+- Código local total: **39.947 bytes**.
+- DOM do documento: **238 elementos descendentes de `html`** (239 contando a raiz).
+- Imagens: **17 arquivos e 17.707.308 bytes** (aproximadamente 16,89 MiB).
+- Sete PNGs fotográficos foram substituídos por JPEGs progressivos, qualidade 95 e 4:4:4, sem redução de resolução: o grupo caiu de 19.401.816 para 5.618.947 bytes.
 
 ## Prévia local
 
