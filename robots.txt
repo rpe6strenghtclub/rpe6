@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rpe6.com.br/sitemap.xml
