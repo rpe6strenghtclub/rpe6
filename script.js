@@ -81,6 +81,67 @@
     elements.forEach((element) => observer.observe(element));
   };
 
+  const initDeferredCarouselImages = () => {
+    const carousels = document.querySelectorAll('.academy-carousel, .method-carousel, .final-community-carousel');
+
+    const loadImage = (image) => new Promise((resolve) => {
+      const source = image.dataset.src;
+      if (!source) {
+        resolve();
+        return;
+      }
+
+      const finish = () => resolve();
+      image.addEventListener('load', finish, { once: true });
+      image.addEventListener('error', finish, { once: true });
+
+      if (image.dataset.srcset) image.srcset = image.dataset.srcset;
+      if (image.dataset.sizes) image.sizes = image.dataset.sizes;
+      image.alt = image.dataset.alt || '';
+      image.removeAttribute('aria-hidden');
+      image.removeAttribute('data-src');
+      image.removeAttribute('data-srcset');
+      image.removeAttribute('data-sizes');
+      image.removeAttribute('data-alt');
+      image.src = source;
+
+      if (image.complete) finish();
+    });
+
+    const loadCarousel = (carousel) => {
+      const pending = [...carousel.querySelectorAll('img[data-src]')];
+      if (!pending.length || carousel.dataset.carouselLoaded) return;
+      carousel.dataset.carouselLoaded = 'true';
+
+      const firstImage = carousel.querySelector('img[src]');
+      const loadSequentially = () => pending.reduce((chain, image) => chain.then(() => loadImage(image)), Promise.resolve());
+
+      if (!firstImage || firstImage.complete) {
+        loadSequentially();
+        return;
+      }
+
+      firstImage.addEventListener('load', loadSequentially, { once: true });
+      firstImage.addEventListener('error', loadSequentially, { once: true });
+    };
+
+    if (reducedMotion.matches || !('IntersectionObserver' in window)) {
+      carousels.forEach(loadCarousel);
+      return;
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        observer.unobserve(entry.target);
+        loadCarousel(entry.target);
+      });
+    }, { rootMargin: '900px 0px' });
+
+    carousels.forEach((carousel) => observer.observe(carousel));
+  };
+
   initParallax();
+  initDeferredCarouselImages();
   initReveals();
 })();

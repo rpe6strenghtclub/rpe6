@@ -10,11 +10,13 @@ Landing page estática e responsiva para a RPE6 Strength Academy, voltada a trei
 - Preço de lançamento de **R$ 39,90 por mês**, preservado enquanto a assinatura permanecer ativa.
 - Duas CTAs “Conheça a Academy” ativas para o checkout Kiwify.
 - Contato flutuante pelo WhatsApp e, no rodapé, telefone, CREF e Linktree.
-- Carrosséis automáticos na Academy, no Método e no CTA final; FAQ nativo; brilho e zoom nos CTAs.
+- Carrosséis automáticos na Academy, no Método e no CTA final; o primeiro slide carrega com a seção e os demais entram em sequência antes da estreia. FAQ nativo; brilho e zoom nos CTAs.
 - Parallax desktop controlado por `requestAnimationFrame`; no mobile o background permanece estático.
 - Entrada progressiva única por blocos com `IntersectionObserver`, fallback visível sem JavaScript e respeito a `prefers-reduced-motion`.
-- Hero e logo do cabeçalho carregados imediatamente; as 13 imagens secundárias usam carregamento tardio, dimensões intrínsecas e decodificação assíncrona.
+- Hero, logo e mídias de maior impacto usam variantes JPEG/PNG responsivas versionadas por `srcset`; masters permanecem preservados. O ícone do WhatsApp usa o PNG original de 27.719 bytes para preservar nitidez. Hero e logo do cabeçalho carregam imediatamente; as imagens secundárias usam carregamento tardio, dimensões intrínsecas e decodificação assíncrona.
+- Compatível com GitHub Pages: sem service worker ou configuração de cache no projeto; novas mídias usam nomes versionados para invalidar o cache por URL.
 - Fontes externas: Barlow Condensed variável de 500 a 900 e Oswald 500, ambas com `display=swap`.
+- Mobile até 760 px com títulos, mídias e CTAs centralizados; textos longos e FAQ à esquerda. Favicon com o logo atual em 16, 32 e 48 px.
 
 ## Destinos ativos
 
@@ -23,15 +25,15 @@ Landing page estática e responsiva para a RPE6 Strength Academy, voltada a trei
 - Telefone: `tel:+5512981521537`
 - Linktree: `https://linktr.ee/gabduques`
 
-## Métricas da refatoração de 2026-09-04
+## Métricas de entrega de 2026-09-05
 
-- HTML: **16.344 bytes**.
-- CSS: **20.874 bytes**.
-- JavaScript: **2.729 bytes**.
-- Código local total: **39.947 bytes**.
-- DOM do documento: **238 elementos descendentes de `html`** (239 contando a raiz).
-- Imagens: **17 arquivos e 17.707.308 bytes** (aproximadamente 16,89 MiB).
-- Sete PNGs fotográficos foram substituídos por JPEGs progressivos, qualidade 95 e 4:4:4, sem redução de resolução: o grupo caiu de 19.401.816 para 5.618.947 bytes.
+- HTML: **22.634 bytes**.
+- CSS: **21.866 bytes**.
+- JavaScript: **4.865 bytes**.
+- Código local total: **49.365 bytes**.
+- DOM fonte: **256 elementos**, incluindo o documento e o fallback `noscript` dos carrosséis.
+- Assets: **44 arquivos e 25.582.927 bytes**, dos quais 27 variantes públicas de entrega somam **7.875.619 bytes**; favicon: 6.897 bytes.
+- O carregamento inicial deixa de solicitar o notebook PNG de 7.400.729 bytes. Em viewport desktop padrão, a variante de 640 px passa a ser selecionada; telas de maior densidade podem selecionar 960 px.
 
 ## Prévia local
 

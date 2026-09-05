@@ -79,6 +79,7 @@ p { line-height: 1.6; color: var(--muted); }
 .academy-carousel-slide { position: absolute; inset: 0; opacity: 0; animation: academy-carousel-fade 10s linear infinite; }
 .academy-carousel-slide:nth-child(2) { animation-delay: -5s; }
 .academy-carousel-slide img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.academy-carousel-slide img[data-src], .method-carousel-slide img[data-src], .final-community-slide img[data-src] { visibility: hidden; }
 .academy-message { font-size: clamp(2.275rem, calc(3.1vw - 2px), 3.4rem); max-width: none; margin: 0 0 1.25rem; }
 .academy-opening { white-space: nowrap; }
 .principles { list-style: none; padding: 0; margin: 5rem 0 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); display: grid; grid-template-columns: repeat(3, 1fr); }
@@ -196,39 +197,50 @@ p { line-height: 1.6; color: var(--muted); }
   .hero { display: flex; flex-direction: column; min-height: 0; padding: 6px; align-items: stretch; }
   .hero-copy-shadow { display: none; }
   .hero-photo { position: relative; z-index: 2; inset: auto; order: 0; width: 100%; height: auto; aspect-ratio: 1400 / 840; max-width: none; margin: 0; transform: none; }
-  .hero-copy { order: 1; width: 100%; padding: 2rem 1rem 2.5rem; }
+  .hero-copy { order: 1; width: 100%; padding: 2rem 1rem 2.5rem; text-align: center; }
   .hero-photo-athlete { filter: none; }
   .hero h1 { font-size: clamp(1.8rem, 7.8vw, 2.1rem); }
-  .hero-lead { font-size: .96rem; }
+  .hero-lead { font-size: .96rem; margin-inline: auto; text-align: left; }
   .content-section { padding: 4.3rem 0; }
+  .content-section.section-frame, .final-cta { padding-inline: 1.4rem; }
+  .content-section h2, .content-section h3 { margin-inline: auto; text-align: center; }
+  .eyebrow { position: relative; padding-top: .85rem; text-align: center; }
+  .eyebrow::before { position: absolute; top: 0; left: 50%; transform: translateX(-50%); margin: 0; }
+  .intro-grid > div, .method-intro > div { min-width: 0; }
+  .intro-grid > div:last-child, .launch-context { border-left: 0; border-top: 2px solid var(--red); padding: 1.2rem 0 0; }
+  .cta-button { max-width: 100%; gap: 1rem; }
   .academy-section { padding-inline: 1rem; overflow: hidden; }
   .intro-grid, .faq { grid-template-columns: 1fr; gap: 2rem; }
   .academy-carousel { width: 100%; max-width: 26rem; margin-inline: auto; }
   .academy-message { max-width: 100%; font-size: clamp(2rem, 10vw, 2.5rem); }
+  .academy-opening { white-space: normal; }
   .library-head h2, .faq-intro h2 { max-width: 10ch; }
   .modules-panel { grid-template-columns: 1fr; }
   .module-card ul { gap: .45rem; }
   .module-card-expansion { grid-column: auto; grid-template-columns: 1fr; }
   .principles { margin-top: 3rem; grid-template-columns: 1fr; }
-  .principles li { padding: 1rem; }
+  .principles li { padding: 1rem; flex-direction: column; gap: .35rem; text-align: center; }
   .principles li + li { border-left: 0; border-top: 1px solid var(--line); }
   .method { padding: 4rem 1.2rem; }
   .method-intro { grid-template-columns: 1fr; width: 100%; margin-left: 0; }
   .method-carousel { width: min(100%, 300px); justify-self: center; margin: 1.5rem auto 0; }
   .method-grid { grid-template-columns: 1fr; width: 100%; margin: 2.4rem 0 0; }
   .method-card { min-height: auto; }
+  .method-card h3 { min-height: 0; }
+  .card-number { text-align: center; }
   .audience { padding: 4rem 1.2rem; }
   .audience p { margin: 0; }
   .launch-top { grid-template-columns: 1fr; gap: 1.5rem; }
-  .launch-brand { justify-content: flex-start; }
+  .launch-brand { justify-content: center; }
   .launch-logo { width: min(100%, 18rem); }
   .launch-offer { grid-template-columns: 1fr; gap: 2rem; margin-top: 2.4rem; }
   .launch-price-panel { padding: 1.8rem 1rem; }
   .launch-price { font-size: clamp(5.4rem, 28vw, 7.6rem); }
-  .launch-context { padding-left: 1rem; }
+  .launch-context { padding-left: 0; }
   .launch-benefits { grid-template-columns: 1fr; }
   .faq details p { margin-right: 0; }
   .final-cta { margin-bottom: 2rem; }
+  .final-cta-message, .product-note { text-align: left; }
   .whatsapp-button { right: max(1rem, env(safe-area-inset-right)); bottom: max(1rem, env(safe-area-inset-bottom)); width: 2.5rem; height: 2.5rem; }
 }
 
