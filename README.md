@@ -6,8 +6,8 @@ Site **lançado e em manutenção**, publicado em [rpe6.com.br](https://rpe6.com
 
 - Landing estática, sem framework, backend, dependências de execução ou build obrigatório.
 - Ordem: Hero, Academy, Módulos, Método, oferta, FAQ e CTA final.
-- Plataforma completa, com planos a partir de R$ 179,00 no pacote trimestral; acesso independente do RPE6 Strength Club.
-- Duas CTAs “Conheça a Academy”, FAQ nativo e rodapé com CREF 189456-G/SP, telefone e Linktree.
+- Plataforma completa, com três planos: trimestral R$ 179,00, semestral R$ 289,00 e anual R$ 469,00 (R$ 39,08/mês); acesso independente do RPE6 Strength Club.
+- Duas CTAs “Conheça a Academy” abrem um seletor de planos acessível; FAQ nativo e rodapé com CREF 189456-G/SP, telefone e Linktree.
 - Três carrosséis (2, 5 e 4 imagens), troca nominal a cada 5 segundos. A próxima imagem é solicitada 1 segundo antes; enquanto não estiver pronta, a atual permanece. Imagens com erro são puladas.
 - Parallax desktop e entradas únicas por blocos. Redução de movimento desativa ambos, preservando carrosséis e interações aprovadas.
 - Hero prioritário e logo do cabeçalho imediato; demais mídias sob demanda. Variantes JPEG/PNG em URLs versionadas; WhatsApp mantém o PNG original de 27.719 bytes pela nitidez.
@@ -17,9 +17,15 @@ Site **lançado e em manutenção**, publicado em [rpe6.com.br](https://rpe6.com
 - Fontes externas: Barlow Condensed variável 500–900 e Oswald 500, com `display=swap`.
 - Sem service worker ou regras próprias de cache: a infraestrutura é controlada pelo GitHub Pages. Trocas de assets devem usar uma nova versão no nome.
 
-## Destinos ativos
+## Planos e destinos ativos
 
-- Checkout: `https://pay.kiwify.com.br/Lxz6VDm`
+| Plano | Total | Equivalente mensal | Checkout |
+| --- | ---: | ---: | --- |
+| Trimestral | R$ 179,00 | R$ 59,67/mês | `https://pay.kiwify.com.br/q17bZQi` |
+| Semestral | R$ 289,00 | R$ 48,17/mês | `https://pay.kiwify.com.br/sfuCROx` |
+| Anual | R$ 469,00 | R$ 39,08/mês | `https://pay.kiwify.com.br/Xof2LNM` |
+
+- Sem JavaScript, as CTAs usam o checkout anual como fallback.
 - WhatsApp: `https://wa.me/message/DQ3XQCHDIIOME1`
 - Telefone: `tel:+5512981521537`
 - Linktree: `https://linktr.ee/gabduques`
@@ -36,12 +42,12 @@ Favicon na raiz, com referência relativa compatível com domínio próprio e en
 
 | Medida | Valor |
 | --- | ---: |
-| HTML | 24.419 bytes |
-| CSS | 22.424 bytes |
-| JavaScript | 7.180 bytes |
-| Código público total | 54.023 bytes |
-| Elementos no HTML fonte, incluindo fallback noscript | 274 |
-| Elementos no DOM com JavaScript, amostra inicial | 266 |
+| HTML | 26.566 bytes |
+| CSS | 26.949 bytes |
+| JavaScript | 8.270 bytes |
+| Código público total | 61.785 bytes |
+| Elementos no HTML fonte, incluindo fallback noscript | 310 |
+| Elementos no DOM com JavaScript, amostra inicial | 302 |
 | Assets armazenados | 31 arquivos / 9.739.383 bytes |
 | Variantes em delivery (subconjunto dos assets) | 27 arquivos / 7.875.619 bytes |
 | Favicon, fora de assets | 6.897 bytes |

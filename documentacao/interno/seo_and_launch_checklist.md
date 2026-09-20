@@ -1,6 +1,6 @@
 # SEO e checklist de manutenção
 
-O site já está lançado em `https://rpe6.com.br`, no GitHub Pages. Publicação inicial e domínio não são pendências. A refatoração de 2026-09-05 foi validada localmente e ainda requer deploy separado.
+O site já está lançado em `https://rpe6.com.br`, no GitHub Pages. Publicação inicial e domínio não são pendências. A atualização local de 2026-09-20 foi validada localmente e ainda requer deploy separado.
 
 ## Concluído
 
@@ -15,13 +15,14 @@ O site já está lançado em `https://rpe6.com.br`, no GitHub Pages. Publicaçã
 - [x] FAQ nativo e conteúdo disponível sem JavaScript.
 - [x] Redução de movimento desativa entradas/parallax, sem antecipar slides.
 - [x] Favicon ICO na raiz, versões 16/32/48 px e referência relativa.
-- [x] Independência entre Academy e Club e oferta de planos a partir de R$ 179,00 preservadas.
+- [x] Independência entre Academy e Club e oferta de planos a partir de R$ 39,08 ao mês no pacote anual preservadas.
 - [x] Referências locais dos assets verificadas após limpeza.
 - [x] Layout comparado em 360, 430, 760, 804, 950 e 1860 px sem novo overflow.
 - [x] Carrosséis testados em ciclo completo, rede lenta e erro; fallbacks sem JS/observador e falha de observador verificados.
 - [x] Canonical definido como `https://rpe6.com.br/`.
 - [x] Open Graph e Twitter Card, com imagem social PNG de 1200×630 e URLs absolutas.
 - [x] `robots.txt` permissivo e `sitemap.xml` com a única URL canônica.
+- [x] Seletor de planos acessível, com foco, Escape, clique fora, fallback sem JavaScript e checkouts em nova aba.
 
 ## Pendências de manutenção
 

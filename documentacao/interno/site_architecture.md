@@ -1,6 +1,6 @@
 # Arquitetura do site
 
-## Estado e estrutura — 2026-09-05
+## Estado e estrutura — 2026-09-20
 
 Landing lançada em `https://rpe6.com.br`, hospedada no GitHub Pages, em manutenção. Esta revisão é local e aguarda deploy separado. Sem framework, backend, build obrigatório, dependências de runtime ou service worker.
 
@@ -31,15 +31,19 @@ O cabeçalho declara a canônica `https://rpe6.com.br/`, Open Graph e Twitter Ca
 2. Academy: carrossel de duas imagens, apresentação e princípios.
 3. Módulos: Biomecânica e hipertrofia, Powerlifting e Periodização.
 4. Método: cinco fotos e três pilares.
-5. Oferta: logo, plataforma pronta, planos a partir de R$ 179,00 e pacote trimestral como plano de entrada.
+5. Oferta: logo, plataforma pronta e resumo do plano anual; as CTAs abrem o seletor de planos.
 6. FAQ: cinco elementos `details`, independentes de JavaScript.
 7. CTA final: quatro fotos da equipe, texto institucional e segunda CTA Kiwify.
 
-Cabeçalho, rodapé e WhatsApp fixo completam a página. Até 760 px há centralização seletiva; parágrafos longos, listas e respostas mantêm leitura à esquerda. Acima disso, layout preservado. Carrosséis compartilham os estilos de gerenciamento; proporções e fades específicos permanecem separados.
+Cabeçalho, rodapé e WhatsApp fixo completam a página. As CTAs do Hero e CTA final abrem um diálogo nativo com planos trimestral, semestral e anual; o anual recebe destaque vermelho. Até 760 px, os cards do diálogo são empilhados e os demais elementos mantêm a centralização seletiva. Acima disso, os três cards ficam lado a lado. Carrosséis compartilham os estilos de gerenciamento; proporções e fades específicos permanecem separados.
 
 ## JavaScript com defer
 
-Três inicializações isoladas: parallax, carrosséis e entradas. Uma falha síncrona não impede as demais. A função compartilhada `readyImage` resolve carregamento/erro, remove listeners e usa limite de espera de 15 segundos. Aplica `sizes` antes de `srcset` e `src`; chamadas concorrentes compartilham a promessa. Imagem que falhar ou exceder o limite é ignorada naquele ciclo de vida da página.
+Quatro inicializações isoladas: parallax, carrosséis, entradas e seletor de planos. Uma falha síncrona não impede as demais. A função compartilhada `readyImage` resolve carregamento/erro, remove listeners e usa limite de espera de 15 segundos. Aplica `sizes` antes de `srcset` e `src`; chamadas concorrentes compartilham a promessa. Imagem que falhar ou exceder o limite é ignorada naquele ciclo de vida da página.
+
+### Seletor de planos
+
+O `dialog` abre por qualquer CTA, bloqueia a rolagem de fundo e usa backdrop escuro. Escape, botão de fechar e clique fora encerram a interação e devolvem foco ao acionador. Cada plano abre seu checkout em nova aba e fecha o diálogo. Sem JavaScript, ambas as CTAs permanecem links para o checkout anual; com redução de movimento, não há animação de abertura.
 
 ### Carrosséis
 
@@ -61,7 +65,7 @@ GitHub Pages controla cabeçalhos e compressão. Novas versões de imagens receb
 
 ## Métricas e validação
 
-HTML 24.419 B; CSS 22.424 B; JS 7.180 B; soma 54.023 B. HTML fonte: 274 elementos incluindo fallback; DOM inicial com JS: 266. Assets: 31 arquivos / 9.739.383 B, incluindo 27 variantes / 7.875.619 B; favicon separado: 6.897 B. Inventário visual total: 32 arquivos / 9.746.280 B.
+HTML 26.566 B; CSS 26.949 B; JS 8.270 B; soma 61.785 B. HTML fonte: 310 elementos, incluindo o fallback `noscript`; DOM inicial com JavaScript: 302 elementos. Assets: 31 arquivos / 9.739.383 B, incluindo 27 variantes / 7.875.619 B; favicon separado: 6.897 B. Inventário visual total: 32 arquivos / 9.746.280 B.
 
 Barra de rolagem: scrollbar-color padrão e fallback WebKit para navegadores sem suporte. Indicador vermelho #d41414 e trilho #090909, sem alteração da largura nativa. Em forced-colors, preserva as cores do sistema.
 

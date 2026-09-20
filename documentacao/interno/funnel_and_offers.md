@@ -2,16 +2,19 @@
 
 ## Estado atual
 
-Site lançado em `https://rpe6.com.br`, hospedado no GitHub Pages e em manutenção. A atualização comercial de 2026-09-19 está preparada localmente e aguarda deploy separado.
+Site lançado em `https://rpe6.com.br`, hospedado no GitHub Pages e em manutenção. A atualização comercial de 2026-09-20 está preparada localmente e aguarda deploy separado.
 
-A landing apresenta somente a RPE6 Strength Academy, produto educacional completo e independente do RPE6 Strength Club. Os planos começam em **R$ 179,00**, no pacote trimestral.
+A landing apresenta somente a RPE6 Strength Academy, produto educacional completo e independente do RPE6 Strength Club. As CTAs abrem um seletor de planos; o anual é o plano de maior destaque e equivale a **R$ 39,08 ao mês**.
 
 ## Destinos ativos
 
 | Ponto de contato | Estado | Destino | Comportamento |
 | --- | --- | --- | --- |
-| “Conheça a Academy” — Hero | Ativo | `https://pay.kiwify.com.br/Lxz6VDm` | Nova aba, `noopener noreferrer` |
-| “Conheça a Academy” — CTA final | Ativo | `https://pay.kiwify.com.br/Lxz6VDm` | Nova aba, `noopener noreferrer` |
+| “Conheça a Academy” — Hero | Ativo | Seletor de planos | Sem JavaScript: checkout anual |
+| “Conheça a Academy” — CTA final | Ativo | Seletor de planos | Sem JavaScript: checkout anual |
+| Plano trimestral | Ativo | `https://pay.kiwify.com.br/q17bZQi` | Nova aba, `noopener noreferrer` |
+| Plano semestral | Ativo | `https://pay.kiwify.com.br/sfuCROx` | Nova aba, `noopener noreferrer` |
+| Plano anual | Ativo | `https://pay.kiwify.com.br/Xof2LNM` | Nova aba, `noopener noreferrer` |
 | Botão flutuante WhatsApp | Ativo | `https://wa.me/message/DQ3XQCHDIIOME1` | Nova aba, rótulo acessível e `noopener noreferrer` |
 | Telefone no rodapé | Ativo | `tel:+5512981521537` | Chamada no dispositivo |
 | “linkTree” no rodapé | Ativo | `https://linktr.ee/gabduques` | Nova aba, `noopener noreferrer` |
@@ -20,8 +23,9 @@ A landing apresenta somente a RPE6 Strength Academy, produto educacional complet
 
 - Produto: RPE6 Strength Academy.
 - Formato: plataforma educacional completa, com vídeos e módulos organizados.
-- Planos a partir de: R$ 179,00.
-- Plano de entrada: pacote trimestral.
+- Trimestral: R$ 179,00, equivalente a R$ 59,67/mês.
+- Semestral: R$ 289,00, equivalente a R$ 48,17/mês.
+- Anual: R$ 469,00, equivalente a R$ 39,08/mês; destacado como mais vantajoso.
 - Independência: o acesso não inclui participação, acompanhamento, vaga ou vínculo com o RPE6 Strength Club.
 
 ## Fora do funil atual

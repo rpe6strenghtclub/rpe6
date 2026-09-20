@@ -2,6 +2,18 @@
 
 As entradas são snapshots históricos. Quando medidas ou descrições antigas divergirem, prevalecem o código atual, o README e a arquitetura.
 
+## 2026-09-20 — Seletor de planos e checkout
+
+- Adicionado seletor nativo e acessível de planos. As duas CTAs “Conheça a Academy” abrem o diálogo com JavaScript; sem JavaScript, ambas preservam o destino do checkout anual.
+- Planos ativos: trimestral `R$ 179,00` (`R$ 59,67/mês`), semestral `R$ 289,00` (`R$ 48,17/mês`) e anual `R$ 469,00` (`R$ 39,08/mês`). Cada card abre o checkout Kiwify correspondente em nova aba com `noopener noreferrer`; o anual recebe destaque vermelho e selo “Mais vantajoso”.
+- O seletor usa três colunas no desktop, cards empilhados no mobile, fundo escurecido, bloqueio de rolagem, fechamento por botão, Escape e backdrop, além de devolução de foco à CTA de origem. Redução de movimento remove a animação de abertura.
+- Validação local: desktop (950 px), mobile (430 px), clique externo, Escape, retorno de foco, links, fallback sem JavaScript e ausência de overflow. Métricas vigentes: HTML 26.566 B; CSS 26.949 B; JavaScript 8.270 B; código público 61.785 B; HTML fonte 310 elementos; DOM inicial 302 elementos.
+
+## 2026-09-20 — Oferta anual
+
+- Painel comercial atualizado para “R$ 39,08 ao mês no pacote anual”. A chamada, CTAs, checkout e estrutura visual foram preservados.
+- Documentação vigente atualizada para a nova referência comercial. O histórico anterior permanece como registro. Métricas vigentes: HTML 24.424 B; código público 54.028 B.
+
 ## 2026-09-19 — Academy pronta e nova oferta
 
 - Reposicionada a RPE6 Strength Academy como plataforma completa e pronta para acesso. Removidas da interface as mensagens de acesso de lançamento, construção contínua, expansão futura e manutenção de mensalidade promocional.

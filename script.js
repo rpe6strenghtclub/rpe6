@@ -177,7 +177,31 @@
     }
   };
 
-  for (const init of [initParallax, initCarousels, initReveals]) {
+  const initPlanDialog = () => {
+    const dialog = document.querySelector('.plans-dialog');
+    const triggers = document.querySelectorAll('[data-plan-dialog-trigger]');
+    if (!dialog || !triggers.length || typeof dialog.showModal !== 'function') return;
+    const closeButton = dialog.querySelector('.plans-dialog-close');
+    let opener;
+    const close = () => { if (dialog.open) dialog.close(); };
+    const open = event => {
+      event.preventDefault();
+      opener = event.currentTarget;
+      document.body.classList.add('plans-dialog-open');
+      dialog.showModal();
+      closeButton?.focus();
+    };
+    triggers.forEach(trigger => trigger.addEventListener('click', open));
+    closeButton?.addEventListener('click', close);
+    dialog.addEventListener('click', event => { if (event.target === dialog) close(); });
+    dialog.querySelectorAll('.plan-checkout').forEach(link => link.addEventListener('click', close));
+    dialog.addEventListener('close', () => {
+      document.body.classList.remove('plans-dialog-open');
+      opener?.focus();
+    });
+  };
+
+  for (const init of [initParallax, initCarousels, initReveals, initPlanDialog]) {
     try { init(); } catch (error) { console.warn('RPE6 component initialization:', error); }
   }
 })();

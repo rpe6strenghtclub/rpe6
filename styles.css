@@ -183,6 +183,35 @@ p { line-height: 1.6; color: var(--muted); }
 .whatsapp-button:hover { transform: scale(1.08); box-shadow: 0 9px 20px rgb(0 0 0 / .4); }
 .whatsapp-button:focus-visible { outline: 2px solid var(--white); outline-offset: 3px; }
 
+.plans-dialog { width: min(1080px, calc(100% - 2rem)); max-width: none; max-height: min(760px, calc(100dvh - 2rem)); margin: auto; padding: 0; overflow: auto; border: 1px solid var(--red); background: linear-gradient(145deg, #191010, var(--black) 42%); color: var(--white); box-shadow: 0 24px 80px rgb(0 0 0 / .72); }
+.plans-dialog::backdrop { background: rgb(0 0 0 / .82); backdrop-filter: blur(3px); }
+.plans-dialog[open] { animation: plans-dialog-enter .2s cubic-bezier(.22, 1, .36, 1); }
+.plans-dialog-content { position: relative; padding: clamp(2.2rem, 5vw, 4rem); text-align: center; }
+.plans-dialog .eyebrow { display: inline-flex; align-items: center; line-height: 1; margin-bottom: .8rem; }
+.plans-dialog .eyebrow::before { flex: 0 0 30px; }
+.plans-dialog h2 { max-width: none; margin-inline: auto; font-size: clamp(2.8rem, 5vw, 4.75rem); }
+.plans-dialog-description { max-width: 42rem; margin: 1rem auto 2rem; font-size: 1.05rem; }
+.plans-dialog-close { position: absolute; top: .8rem; right: .8rem; display: grid; width: 2.6rem; height: 2.6rem; place-items: center; border: 1px solid var(--line); border-radius: 50%; background: transparent; color: var(--white); font: 700 2rem/.8 var(--condensed); cursor: pointer; transition: transform .18s ease, border-color .18s ease, background .18s ease; }
+.plans-dialog-close:hover { transform: scale(1.08); border-color: var(--red); background: rgb(212 20 20 / .14); }
+.plans-dialog-close:focus-visible, .plan-checkout:focus-visible { outline: 2px solid var(--white); outline-offset: 3px; }
+.plans-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; align-items: stretch; }
+.plan-card { position: relative; display: flex; flex-direction: column; min-height: 25rem; padding: 2rem 1.25rem 1.35rem; border: 1px solid var(--line); background: rgb(9 9 9 / .86); text-align: center; }
+.plan-card h3 { margin: 0; font-size: clamp(2rem, 3vw, 2.65rem); }
+.plan-total { margin: 1.2rem 0 0; color: var(--white); font: 900 clamp(4.65rem, 7vw, 7rem)/.82 var(--condensed); letter-spacing: -.04em; }
+.plan-total span, .plan-total sup { color: var(--red); }
+.plan-total span { display: inline-block; vertical-align: middle; margin-right: .08em; font-size: .4em; }
+.plan-total sup { position: relative; top: -.5em; margin-left: .03em; font-size: .4em; }
+.plan-total-label { margin: .65rem 0 0; color: var(--muted); font: 700 .9rem/1 var(--condensed); letter-spacing: .1em; text-transform: uppercase; }
+.plan-monthly { margin: 1.55rem 0 1.3rem; color: var(--white); font: 700 clamp(1.55rem, 2.2vw, 2rem)/1 var(--condensed); }
+.plan-monthly span { display: block; margin-top: .3rem; color: var(--muted); font-size: .7em; letter-spacing: .08em; text-transform: uppercase; }
+.plan-checkout { display: inline-flex; align-items: center; justify-content: center; min-height: 3rem; margin-top: auto; border: 1px solid var(--red); background: linear-gradient(110deg, var(--red), #a00b0b); color: var(--white); font: 800 1.12rem/1 var(--condensed); letter-spacing: .08em; text-decoration: none; text-transform: uppercase; transition: transform .18s ease; }
+.plan-checkout:hover { transform: scale(1.03); }
+.plan-card-annual { border-color: var(--white); background: linear-gradient(145deg, #e01b1b, #a00b0b); box-shadow: 0 12px 28px rgb(0 0 0 / .4); }
+.plan-card-annual .plan-total span, .plan-card-annual .plan-total sup, .plan-card-annual .plan-total-label, .plan-card-annual .plan-monthly span { color: var(--white); }
+.plan-card-annual .plan-checkout { border-color: var(--white); background: var(--black); }
+.plan-badge { position: absolute; top: -1px; left: 50%; padding: .42rem .75rem; border: 1px solid var(--white); background: var(--black); color: var(--white); font: 800 .9rem/1 var(--condensed); letter-spacing: .08em; text-transform: uppercase; transform: translate(-50%, -50%); white-space: nowrap; }
+body.plans-dialog-open { overflow: hidden; }
+
 .reveal-ready .reveal { opacity: 0; transform: translate3d(0, 24px, 0); will-change: opacity, transform; }
 .reveal-ready .reveal.is-revealed { opacity: 1; transform: translate3d(0, 0, 0); transition: opacity .55s cubic-bezier(.22, 1, .36, 1), transform .55s cubic-bezier(.22, 1, .36, 1); transition-delay: var(--reveal-delay, 0ms); will-change: auto; }
 .reveal-delay-1 { --reveal-delay: 90ms; }
@@ -198,6 +227,7 @@ p { line-height: 1.6; color: var(--muted); }
 @keyframes method-carousel-five-fade { 0%, 18% { opacity: 1; } 20%, 98% { opacity: 0; } 100% { opacity: 1; } }
 @keyframes community-carousel-fade { 0%, 23% { opacity: 1; } 25%, 98% { opacity: 0; } 100% { opacity: 1; } }
 @keyframes cta-sheen { 0%, 60% { opacity: 0; transform: translateX(-250%) skewX(-22deg); } 64%, 80% { opacity: .72; } 84%, 100% { opacity: 0; transform: translateX(500%) skewX(-22deg); } }
+@keyframes plans-dialog-enter { from { opacity: 0; transform: translateY(16px) scale(.98); } to { opacity: 1; transform: translateY(0) scale(1); } }
 
 @media (max-width: 760px) {
   :root { --width: min(100% - 32px, 600px); }
@@ -252,10 +282,18 @@ p { line-height: 1.6; color: var(--muted); }
   .final-cta { margin-bottom: 2rem; }
   .final-cta-message, .product-note { text-align: left; }
   .whatsapp-button { right: max(1rem, env(safe-area-inset-right)); bottom: max(1rem, env(safe-area-inset-bottom)); width: 2.5rem; height: 2.5rem; }
+  .plans-dialog { width: min(100% - 1.25rem, 34rem); max-height: calc(100dvh - 1.25rem); }
+  .plans-dialog-content { padding: 3.75rem 1rem 1rem; }
+  .plans-dialog-description { margin-bottom: 1.5rem; }
+  .plans-grid { grid-template-columns: 1fr; gap: 1rem; }
+  .plan-card { min-height: 0; padding: 2rem 1.2rem 1.2rem; }
+  .plan-total { font-size: clamp(4.8rem, 24vw, 6.5rem); }
+  .plan-monthly { margin: 1rem 0; }
 }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .parallax-background { will-change: auto; }
   .reveal-ready .reveal { opacity: 1; transform: none; transition: none; will-change: auto; }
+  .plans-dialog[open] { animation: none; }
 }
