@@ -31,7 +31,7 @@ O cabeçalho declara a canônica `https://rpe6.com.br/`, Open Graph e Twitter Ca
 2. Academy: carrossel de duas imagens, apresentação e princípios.
 3. Módulos: Biomecânica e hipertrofia, Powerlifting e Periodização.
 4. Método: cinco fotos e três pilares.
-5. Oferta: logo, R$ 39,90/mês, preservação da mensalidade ativa e evolução da plataforma.
+5. Oferta: logo, plataforma pronta, planos a partir de R$ 179,00 e pacote trimestral como plano de entrada.
 6. FAQ: cinco elementos `details`, independentes de JavaScript.
 7. CTA final: quatro fotos da equipe, texto institucional e segunda CTA Kiwify.
 
@@ -49,7 +49,7 @@ Sem JavaScript, `noscript` fornece as fontes e as animações CSS mantêm os car
 
 ### Entradas e parallax
 
-Entradas por blocos: opacidade e deslocamento único; cada alvo deixa de ser observado ao entrar. A classe que oculta os alvos só é ativada depois da criação/configuração do observador. Mídias aguardam a imagem principal; erro ou timeout também liberam o bloco. Sem JavaScript, sem observador ou com redução de movimento, o conteúdo fica visível.
+Entradas por blocos: opacidade e deslocamento único; cada alvo deixa de ser observado ao entrar. A fotografia do Hero segue o mesmo efeito após sua imagem prioritária estar pronta. A classe que oculta os alvos só é ativada depois da criação/configuração do observador. Mídias aguardam a imagem principal; erro ou timeout também liberam o bloco. Sem JavaScript, sem observador ou com redução de movimento, o conteúdo fica visível.
 
 Parallax desktop: progresso limitado a 0–1, com `requestAnimationFrame` e listener passivo. O listener de rolagem é removido quando desativado. No mobile ou com redução de movimento não há deslocamento. Background quadrado ou alto é escolhido conforme proporção da viewport, sem modificar os arquivos originais.
 
@@ -61,7 +61,7 @@ GitHub Pages controla cabeçalhos e compressão. Novas versões de imagens receb
 
 ## Métricas e validação
 
-HTML 24.365 B; CSS 22.424 B; JS 7.180 B; soma 53.969 B. HTML fonte: 274 elementos incluindo fallback; DOM inicial com JS: 266. Assets: 31 arquivos / 9.739.383 B, incluindo 27 variantes / 7.875.619 B; favicon separado: 6.897 B. Inventário visual total: 32 arquivos / 9.746.280 B.
+HTML 24.419 B; CSS 22.424 B; JS 7.180 B; soma 54.023 B. HTML fonte: 274 elementos incluindo fallback; DOM inicial com JS: 266. Assets: 31 arquivos / 9.739.383 B, incluindo 27 variantes / 7.875.619 B; favicon separado: 6.897 B. Inventário visual total: 32 arquivos / 9.746.280 B.
 
 Barra de rolagem: scrollbar-color padrão e fallback WebKit para navegadores sem suporte. Indicador vermelho #d41414 e trilho #090909, sem alteração da largura nativa. Em forced-colors, preserva as cores do sistema.
 

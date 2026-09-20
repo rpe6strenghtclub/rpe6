@@ -10,9 +10,9 @@ Apresentar a RPE6 Strength Academy como plataforma educacional em vídeo para ap
 
 1. **Hero:** “Menos achismo. Mais preparação!”, descrição da série de vídeos e CTA “Conheça a Academy”.
 2. **Academy:** “O conhecimento que faltava para você entender força.”, definição da plataforma, foco inicial no powerlifting e princípios “Organizado, prático e direto”, “Para quem quer entender e evoluir” e “Além do powerlifting”.
-3. **Módulos da plataforma:** Biomecânica e hipertrofia, Powerlifting, Periodização e aviso de novos conteúdos em expansão contínua.
+3. **Módulos da plataforma:** Biomecânica e hipertrofia, Powerlifting, Periodização e conteúdo completo organizado para aprofundar o entendimento e orientar a aplicação prática.
 4. **Método:** “Não basta treinar pesado. É preciso saber quando, quanto e por quê.”, apoiado pelos pilares Periodização, Padrão técnico e Competição.
-5. **Oferta de lançamento:** “Entre agora. Evolua com a plataforma.”, preço de **R$ 39,90 por mês** e a condição de manutenção desse valor enquanto a assinatura permanecer ativa. A copy informa que novas assinaturas poderão receber preço atualizado conforme a plataforma evoluir.
+5. **Oferta:** “Acesse agora. Evolua com a plataforma.”, planos a partir de **R$ 179,00** no pacote trimestral e a chamada “Comece hoje a treinar com mais clareza, método e propósito.”.
 6. **FAQ:** separação entre Academy e Club, escopo do produto, nível necessário, disponibilização dos conteúdos e distinção de acompanhamento individual.
 7. **CTA final:** “Conhecimento construído com atletas. Organizado para você.”, experiência da RPE6 Strength com atletas, nota de independência em relação ao Club e CTA ativa.
 
@@ -20,7 +20,7 @@ Apresentar a RPE6 Strength Academy como plataforma educacional em vídeo para ap
 
 Respostas vigentes do FAQ, sem avisos de divulgação futura:
 
-- Como os conteúdos serão disponibilizados? “A RPE6 Strength Academy reunirá vídeos e módulos organizados em uma plataforma de ensino.”
+- Como os conteúdos serão disponibilizados? “A RPE6 Strength Academy reúne vídeos e módulos organizados em uma plataforma de ensino.”
 - A RPE6 Strength Academy substitui acompanhamento individual? “Não. A RPE6 Strength Academy é um produto educacional.”
 
 - As duas CTAs “Conheça a Academy” levam ao checkout Kiwify.
@@ -34,7 +34,7 @@ Respostas vigentes do FAQ, sem avisos de divulgação futura:
 - Não publicar alegações médicas, nutricionais ou terapêuticas sem revisão adequada.
 - Não incluir depoimentos, antes/depois, resultados ou nomes de alunos sem autorização.
 - Não sugerir que a compra ou o acesso à Academy concede participação, acompanhamento, vagas ou vínculo com o RPE6 Strength Club.
-- Não alterar preço, condição de preservação da mensalidade, checkout ou contatos sem aprovação do responsável.
+- Não alterar preço, planos, checkout ou contatos sem aprovação do responsável.
 
 ## Pendências editoriais
 

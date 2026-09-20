@@ -2,6 +2,21 @@
 
 As entradas são snapshots históricos. Quando medidas ou descrições antigas divergirem, prevalecem o código atual, o README e a arquitetura.
 
+## 2026-09-19 — Academy pronta e nova oferta
+
+- Reposicionada a RPE6 Strength Academy como plataforma completa e pronta para acesso. Removidas da interface as mensagens de acesso de lançamento, construção contínua, expansão futura e manutenção de mensalidade promocional.
+- Oferta atualizada para “Planos a partir de R$ 179,00”, com pacote trimestral como plano de entrada. Checkout, CTAs, WhatsApp e demais destinos foram preservados.
+- Atualizados módulos, FAQ, meta description, Open Graph e Twitter Card para linguagem presente e compatível com a plataforma pronta. Imagem social, canonical, robots e sitemap permanecem inalterados.
+- Documentação vigente atualizada. Métricas: HTML 24.406 B; CSS 22.424 B; JavaScript 7.180 B; código público 54.010 B. Nenhuma publicação externa foi executada.
+
+## 2026-09-19 — Copy do plano trimestral
+
+- A nota do painel comercial passa a ser “Comece hoje a treinar com mais clareza, método e propósito.”, substituindo a descrição operacional do plano de entrada. Preço, período, layout e destinos foram preservados. Métricas vigentes: HTML 24.399 B; código público 54.003 B.
+
+## 2026-09-19 — Entrada da imagem Hero
+
+- A fotografia do Hero passa a usar a mesma entrada única dos blocos de mídia: opacidade de 0 para 1 e deslocamento vertical de 24 px para 0 após a imagem prioritária ficar pronta. Sem JavaScript, observador ou com redução de movimento, ela permanece visível sem transição. Métricas vigentes: HTML 24.419 B; código público 54.023 B.
+
 ## 2026-09-05 — SEO técnico e indexação
 
 - Adicionados canonical absoluto de `https://rpe6.com.br/`, Open Graph e Twitter Card, preservando título e meta description públicos.

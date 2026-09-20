@@ -2,9 +2,9 @@
 
 ## Estado atual
 
-Site lançado em `https://rpe6.com.br`, hospedado no GitHub Pages e em manutenção. A refatoração de 2026-09-05 é local, não altera o funil e aguarda deploy separado.
+Site lançado em `https://rpe6.com.br`, hospedado no GitHub Pages e em manutenção. A atualização comercial de 2026-09-19 está preparada localmente e aguarda deploy separado.
 
-A landing apresenta somente a RPE6 Strength Academy, produto educacional independente do RPE6 Strength Club. O lançamento oferece acesso por **R$ 39,90 por mês**; quem assina agora preserva essa mensalidade enquanto a assinatura permanecer ativa.
+A landing apresenta somente a RPE6 Strength Academy, produto educacional completo e independente do RPE6 Strength Club. Os planos começam em **R$ 179,00**, no pacote trimestral.
 
 ## Destinos ativos
 
@@ -19,9 +19,9 @@ A landing apresenta somente a RPE6 Strength Academy, produto educacional indepen
 ## Oferta publicada
 
 - Produto: RPE6 Strength Academy.
-- Formato: plataforma educacional com vídeos e módulos em expansão contínua.
-- Preço de lançamento: R$ 39,90 por mês.
-- Condição: o valor de lançamento é mantido enquanto a assinatura atual permanecer ativa; futuras novas assinaturas podem receber preço atualizado.
+- Formato: plataforma educacional completa, com vídeos e módulos organizados.
+- Planos a partir de: R$ 179,00.
+- Plano de entrada: pacote trimestral.
 - Independência: o acesso não inclui participação, acompanhamento, vaga ou vínculo com o RPE6 Strength Club.
 
 ## Fora do funil atual

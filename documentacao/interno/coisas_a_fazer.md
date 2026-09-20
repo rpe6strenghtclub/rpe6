@@ -3,7 +3,7 @@
 ## Concluído
 
 - [x] Site lançado em rpe6.com.br, hospedado no GitHub Pages; CNAME configurado.
-- [x] Oferta de R$ 39,90/mês, checkout Kiwify e duas CTAs ativos.
+- [x] Plataforma completa, planos a partir de R$ 179,00 no pacote trimestral, checkout Kiwify e duas CTAs ativos.
 - [x] WhatsApp, telefone, CREF e Linktree publicados.
 - [x] FAQ revisado, centralização seletiva mobile e favicon na raiz.
 - [x] Variantes responsivas JPEG/PNG versionadas; WhatsApp original preservado.

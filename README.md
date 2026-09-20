@@ -5,8 +5,8 @@ Site **lançado e em manutenção**, publicado em [rpe6.com.br](https://rpe6.com
 ## Estado atual
 
 - Landing estática, sem framework, backend, dependências de execução ou build obrigatório.
-- Ordem: Hero, Academy, Módulos, Método, oferta de lançamento, FAQ e CTA final.
-- R$ 39,90 por mês, preservados enquanto a assinatura permanecer ativa; acesso independente do RPE6 Strength Club.
+- Ordem: Hero, Academy, Módulos, Método, oferta, FAQ e CTA final.
+- Plataforma completa, com planos a partir de R$ 179,00 no pacote trimestral; acesso independente do RPE6 Strength Club.
 - Duas CTAs “Conheça a Academy”, FAQ nativo e rodapé com CREF 189456-G/SP, telefone e Linktree.
 - Três carrosséis (2, 5 e 4 imagens), troca nominal a cada 5 segundos. A próxima imagem é solicitada 1 segundo antes; enquanto não estiver pronta, a atual permanece. Imagens com erro são puladas.
 - Parallax desktop e entradas únicas por blocos. Redução de movimento desativa ambos, preservando carrosséis e interações aprovadas.
@@ -36,10 +36,10 @@ Favicon na raiz, com referência relativa compatível com domínio próprio e en
 
 | Medida | Valor |
 | --- | ---: |
-| HTML | 24.365 bytes |
+| HTML | 24.419 bytes |
 | CSS | 22.424 bytes |
 | JavaScript | 7.180 bytes |
-| Código público total | 53.969 bytes |
+| Código público total | 54.023 bytes |
 | Elementos no HTML fonte, incluindo fallback noscript | 274 |
 | Elementos no DOM com JavaScript, amostra inicial | 266 |
 | Assets armazenados | 31 arquivos / 9.739.383 bytes |
