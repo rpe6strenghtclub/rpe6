@@ -2,9 +2,9 @@
 
 ## Estado atual
 
-Site lançado em `https://rpe6.com.br`, hospedado no GitHub Pages e em manutenção. A atualização comercial de 2026-09-20 está preparada localmente e aguarda deploy separado.
+Site lançado em `https://rpe6.com.br`, hospedado no GitHub Pages e em manutenção. A atualização comercial de 2026-09-22 está preparada localmente e aguarda deploy separado.
 
-A landing apresenta somente a RPE6 Strength Academy, produto educacional completo e independente do RPE6 Strength Club. As CTAs abrem um seletor de planos; o anual é o plano de maior destaque e equivale a **R$ 39,08 ao mês**.
+A landing apresenta somente a RPE6 Strength Academy, produto educacional completo e independente do RPE6 Strength Club. As CTAs abrem um seletor de planos; o anual é o plano de maior destaque e equivale a **R$ 39,19 ao mês** no parcelamento.
 
 ## Destinos ativos
 
@@ -23,9 +23,10 @@ A landing apresenta somente a RPE6 Strength Academy, produto educacional complet
 
 - Produto: RPE6 Strength Academy.
 - Formato: plataforma educacional completa, com vídeos e módulos organizados.
-- Trimestral: R$ 179,00, equivalente a R$ 59,67/mês.
-- Semestral: R$ 289,00, equivalente a R$ 48,17/mês.
-- Anual: R$ 469,00, equivalente a R$ 39,08/mês; destacado como mais vantajoso.
+- Trimestral: R$ 56,68/mês, R$ 170,04 no parcelamento e R$ 159,00 à vista.
+- Semestral: R$ 48,55/mês, R$ 291,30 no parcelamento e R$ 259,00 à vista.
+- Anual: R$ 39,19/mês, R$ 470,28 no parcelamento e R$ 379,00 à vista; destacado como mais vantajoso.
+- Cada card exibe o valor à vista informado, sem detalhar percentual de desconto ou prometer condição adicional.
 - Independência: o acesso não inclui participação, acompanhamento, vaga ou vínculo com o RPE6 Strength Club.
 
 ## Fora do funil atual

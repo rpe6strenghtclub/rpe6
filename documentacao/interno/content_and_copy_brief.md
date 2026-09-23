@@ -1,6 +1,6 @@
 # Brief de conteúdo e copy
 
-Estado em 2026-09-20: site lançado em rpe6.com.br, em manutenção no GitHub Pages. A atualização local preserva a copy vigente e os três planos; seu deploy é separado.
+Estado em 2026-09-22: site lançado em rpe6.com.br, em manutenção no GitHub Pages. A atualização local preserva a copy vigente e os três planos; seu deploy é separado.
 
 ## Objetivo
 
@@ -12,7 +12,7 @@ Apresentar a RPE6 Strength Academy como plataforma educacional em vídeo para ap
 2. **Academy:** “O conhecimento que faltava para você entender força.”, definição da plataforma, foco inicial no powerlifting e princípios “Organizado, prático e direto”, “Para quem quer entender e evoluir” e “Além do powerlifting”.
 3. **Módulos da plataforma:** Biomecânica e hipertrofia, Powerlifting, Periodização e conteúdo completo organizado para aprofundar o entendimento e orientar a aplicação prática.
 4. **Método:** “Não basta treinar pesado. É preciso saber quando, quanto e por quê.”, apoiado pelos pilares Periodização, Padrão técnico e Competição.
-5. **Oferta:** “Acesse agora. Evolua com a plataforma.”, painel resumido do anual e seletor com os planos trimestral (R$ 179,00 / R$ 59,67/mês), semestral (R$ 289,00 / R$ 48,17/mês) e anual (R$ 469,00 / R$ 39,08/mês), destacado como “Mais vantajoso”.
+5. **Oferta:** “Acesse agora. Evolua com a plataforma.”, painel resumido do anual e seletor com os planos trimestral (R$ 56,68/mês, R$ 170,04 no parcelamento e R$ 159,00 à vista), semestral (R$ 48,55/mês, R$ 291,30 e R$ 259,00 à vista) e anual (R$ 39,19/mês, R$ 470,28 e R$ 379,00 à vista), destacado como “Mais vantajoso”. Cada card explicita os valores à vista sem prometer percentual ou condição adicional.
 6. **FAQ:** separação entre Academy e Club, escopo do produto, nível necessário, disponibilização dos conteúdos e distinção de acompanhamento individual.
 7. **CTA final:** “Conhecimento construído com atletas. Organizado para você.”, experiência da RPE6 Strength com atletas, nota de independência em relação ao Club e CTA ativa.
 

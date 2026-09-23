@@ -2,6 +2,29 @@
 
 As entradas são snapshots históricos. Quando medidas ou descrições antigas divergirem, prevalecem o código atual, o README e a arquitetura.
 
+## 2026-09-22 — Redesign visual do seletor de planos
+
+- Modal e cards refinados para uma hierarquia dark premium: fundo escuro, bordas discretas nos planos regulares e borda/glow vermelhos sutis no anual, sem preenchimento vermelho no card inteiro.
+- Selo anual passou a usar fundo vermelho e texto branco. Botões agora seguem progressão visual: trimestral neutro, semestral com borda vermelha e anual preenchido em vermelho. Preços permanecem brancos, sem alteração de copy, valores, links ou lógica.
+- O background global passou a ser reutilizado diretamente dentro do modal, sem camada adicional, mantendo o mesmo posicionamento e dimensionamento da página.
+- Validação local em 809/950 px e 430 px: cards, textos, responsividade, foco, Escape, retorno de foco e ausência de overflow preservados. Métricas vigentes: HTML 27.250 B; CSS 28.408 B; JavaScript 8.270 B; código público 63.928 B.
+
+## 2026-09-22 — Valores à vista no seletor
+
+- Removida a nota geral sobre desconto à vista e adicionada uma linha própria em cada card: trimestral R$ 159,00, semestral R$ 259,00 e anual R$ 379,00.
+- A altura do modal e dos cards foi ampliada para acomodar a nova informação sem comprimir os valores, os rótulos ou os botões. Parcelamento, links, foco e fallback anual permanecem inalterados.
+- No mobile, o espaçamento entre cards passou para 24 px e o respiro vertical interno foi ampliado, mantendo a rolagem interna e evitando compressão visual em 393/430 px.
+- O conteúdo interno dos cards agora mantém 16 px de distância visual do CTA no mobile, de forma uniforme nos três planos, sem alterar o desktop.
+- Métricas locais atualizadas: HTML 27.250 B; CSS 28.408 B; JavaScript 8.270 B; código público 63.928 B; HTML fonte 328 elementos e DOM inicial 321 elementos.
+
+## 2026-09-22 — Valores parcelados e brilho anual
+
+- Seletor atualizado com a hierarquia mensal em destaque: trimestral R$ 56,68/mês e R$ 170,04 total no parcelamento; semestral R$ 48,55/mês e R$ 291,30; anual R$ 39,19/mês e R$ 470,28.
+- Adicionada a nota “Desconto para pagamentos à vista.” sem porcentagem, condição adicional ou preço final prometido. O painel resumido anual acompanha o equivalente de R$ 39,19 ao mês.
+- O card anual preserva fundo vermelho e selo “Mais vantajoso” e passa a receber o brilho deslizante dos CTAs, com conteúdo protegido por camadas; por decisão de produto, esse brilho permanece ativo em redução de movimento.
+- Cards reorganizados em uma área flexível de conteúdo e faixa inferior fixa do botão: título, mensalidade, total e CTA permanecem nas mesmas linhas; o selo anual tem faixa superior própria. Validação local em desktop e 430 px sem colisão ou overflow.
+- Contraste refinado nos cards escuros: somente o valor inteiro da mensalidade usa vermelho; símbolo monetário e centavos permanecem brancos. Totais parcelados são totalmente brancos. Métricas vigentes: HTML 27.096 B; CSS 27.887 B; JavaScript 8.270 B; código público 63.253 B; HTML fonte 323 elementos; DOM inicial 316 elementos.
+
 ## 2026-09-20 — Seletor de planos e checkout
 
 - Adicionado seletor nativo e acessível de planos. As duas CTAs “Conheça a Academy” abrem o diálogo com JavaScript; sem JavaScript, ambas preservam o destino do checkout anual.

@@ -1,6 +1,6 @@
 # Arquitetura do site
 
-## Estado e estrutura — 2026-09-20
+## Estado e estrutura — 2026-09-22
 
 Landing lançada em `https://rpe6.com.br`, hospedada no GitHub Pages, em manutenção. Esta revisão é local e aguarda deploy separado. Sem framework, backend, build obrigatório, dependências de runtime ou service worker.
 
@@ -35,7 +35,7 @@ O cabeçalho declara a canônica `https://rpe6.com.br/`, Open Graph e Twitter Ca
 6. FAQ: cinco elementos `details`, independentes de JavaScript.
 7. CTA final: quatro fotos da equipe, texto institucional e segunda CTA Kiwify.
 
-Cabeçalho, rodapé e WhatsApp fixo completam a página. As CTAs do Hero e CTA final abrem um diálogo nativo com planos trimestral, semestral e anual; o anual recebe destaque vermelho. Até 760 px, os cards do diálogo são empilhados e os demais elementos mantêm a centralização seletiva. Acima disso, os três cards ficam lado a lado. Carrosséis compartilham os estilos de gerenciamento; proporções e fades específicos permanecem separados.
+Cabeçalho, rodapé e WhatsApp fixo completam a página. As CTAs do Hero e CTA final abrem um diálogo nativo com planos trimestral, semestral e anual; o anual recebe destaque vermelho. Até 760 px, os cards do diálogo são empilhados com 24 px entre si e mais respiro vertical interno; os demais elementos mantêm a centralização seletiva. Acima disso, os três cards ficam lado a lado. Carrosséis compartilham os estilos de gerenciamento; proporções e fades específicos permanecem separados.
 
 ## JavaScript com defer
 
@@ -43,7 +43,7 @@ Quatro inicializações isoladas: parallax, carrosséis, entradas e seletor de p
 
 ### Seletor de planos
 
-O `dialog` abre por qualquer CTA, bloqueia a rolagem de fundo e usa backdrop escuro. Escape, botão de fechar e clique fora encerram a interação e devolvem foco ao acionador. Cada plano abre seu checkout em nova aba e fecha o diálogo. Sem JavaScript, ambas as CTAs permanecem links para o checkout anual; com redução de movimento, não há animação de abertura.
+O `dialog` abre por qualquer CTA, bloqueia a rolagem de fundo e usa backdrop escuro. A tela reutiliza o background global diretamente, com o mesmo posicionamento `center top / 100% auto` e sem camada adicional. Escape, botão de fechar e clique fora encerram a interação e devolvem foco ao acionador. Cada card usa uma área de conteúdo flexível e um botão em faixa inferior fixa, mantendo títulos, mensalidades, totais e linhas à vista na mesma linha entre os três planos. Os cards mostram primeiro o equivalente mensal, abaixo o total no parcelamento e, em seguida, o valor à vista: trimestral R$ 56,68/mês, R$ 170,04 e R$ 159,00; semestral R$ 48,55/mês, R$ 291,30 e R$ 259,00; anual R$ 39,19/mês, R$ 470,28 e R$ 379,00. O valor à vista é informativo, sem promessa de percentual ou condição adicional. O selo anual ocupa faixa própria no topo; o anual usa fundo escuro, borda e glow vermelhos sutis, além do brilho do CTA, inclusive com redução de movimento. Cada plano abre seu checkout em nova aba e fecha o diálogo. Sem JavaScript, ambas as CTAs permanecem links para o checkout anual; com redução de movimento, não há animação de abertura do diálogo.
 
 ### Carrosséis
 
@@ -65,7 +65,7 @@ GitHub Pages controla cabeçalhos e compressão. Novas versões de imagens receb
 
 ## Métricas e validação
 
-HTML 26.566 B; CSS 26.949 B; JS 8.270 B; soma 61.785 B. HTML fonte: 310 elementos, incluindo o fallback `noscript`; DOM inicial com JavaScript: 302 elementos. Assets: 31 arquivos / 9.739.383 B, incluindo 27 variantes / 7.875.619 B; favicon separado: 6.897 B. Inventário visual total: 32 arquivos / 9.746.280 B.
+HTML 27.250 B; CSS 28.408 B; JS 8.270 B; soma 63.928 B. HTML fonte: 328 elementos, incluindo o fallback `noscript`; DOM inicial com JavaScript: 321 elementos. Assets: 31 arquivos / 9.739.383 B, incluindo 27 variantes / 7.875.619 B; favicon separado: 6.897 B. Inventário visual total: 32 arquivos / 9.746.280 B.
 
 Barra de rolagem: scrollbar-color padrão e fallback WebKit para navegadores sem suporte. Indicador vermelho #d41414 e trilho #090909, sem alteração da largura nativa. Em forced-colors, preserva as cores do sistema.
 

@@ -3,7 +3,7 @@
 ## Concluído
 
 - [x] Site lançado em rpe6.com.br, hospedado no GitHub Pages; CNAME configurado.
-- [x] Plataforma completa, planos a partir de R$ 39,08 ao mês no pacote anual, checkout Kiwify e duas CTAs ativos.
+- [x] Plataforma completa, planos a partir de R$ 39,19 ao mês no parcelamento anual, checkout Kiwify e duas CTAs ativos.
 - [x] Seletor de planos com trimestral, semestral e anual; anual destacado e CTAs com fallback para o checkout anual.
 - [x] WhatsApp, telefone, CREF e Linktree publicados.
 - [x] FAQ revisado, centralização seletiva mobile e favicon na raiz.
